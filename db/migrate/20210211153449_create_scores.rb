@@ -3,6 +3,7 @@ class CreateScores < ActiveRecord::Migration[6.1]
     create_table :scores do |t|
       t.integer :round
       t.integer :adjusted_round
+      t.integer :course_id
 
       t.timestamps
     end
